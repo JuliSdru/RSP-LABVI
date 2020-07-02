@@ -1,0 +1,20 @@
+.fondo
+{
+    background: url("https://image.freepik.com/vector-gratis/conjunto-tienda-local-negocios-locales-estilo-plano_98396-1286.jpg");
+}
+.navbar
+{
+    background-color: rgb(76, 175, 125);
+}
+.btn 
+{
+    background-color: #cf5f57;
+    color: black;
+    border: black 2px solid;
+}
+a
+{
+   
+    color: black;
+
+}

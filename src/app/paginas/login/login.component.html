@@ -1,0 +1,32 @@
+<div class="login-page">
+    <div class="form">
+        <form class="login-form">
+            <br>
+            <br>
+            <p style="font-size: xx-large;"><b>BIENVENIDO!</b></p>
+            <p style="text-align: justify;">INGRESE SU CORREO</p>
+            <input type="text" placeholder="mail" [(ngModel)]="mail" name="mail" />
+            <p style="text-align: justify;">INGRESE SU CONTRASEÑA</p>
+            <input type="password" placeholder="password" [(ngModel)]="password" name="password" />
+            <p>{{message}}</p>
+            <div *ngIf="spinner">
+                <div class="col-md-2 loader5 bg-green-grd">
+                    <div class="trinity-rings-spinner">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <re-captcha (resolved)="resolved($event)" siteKey="6LdcXAAVAAAAAHxGowz5uvLwIFdjXXyUBfkoxTuy"></re-captcha>
+            <br>
+            <button type="button"  (click)="logIn()">login</button>
+           <b> <p class="message" style="color: rgb(76, 175, 125);">SI TODAVIA NO TENES UNA CUENTA
+                
+            </p>
+        </b>
+                <a  style="color: rgb(76, 175, 125); font-size: large;" href="/register">REGISTRATE</a>
+        </form>
+    </div>
+
+</div> 

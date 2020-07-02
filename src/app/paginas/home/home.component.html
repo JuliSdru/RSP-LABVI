@@ -1,0 +1,21 @@
+<div class="fondo">
+<nav class="navbar">
+    <form class="form-inline">
+      <button class="btn btn-sm btn-secondary" type="button" (click)="altaLocal = true; altaProd = false; tablaProd = false;">Alta Local</button> &nbsp;&nbsp;
+      <button class="btn btn-sm btn-secondary" type="button" (click)="altaLocal = false; altaProd = true; tablaProd = false;">Alta Productos</button> &nbsp;&nbsp;
+      <button class="btn btn-sm btn-secondary" type="button" (click)="altaLocal = false; altaProd = false; tablaProd = true;">Productos</button> &nbsp;&nbsp;
+      <a href="#" class="nav-link" class="btn btn-sm btn-secondary"  (click)="onLogout()">Cerrar Sesión</a>
+        <i style="margin-left: 250px;"><b>   Sesión iniciada como: {{Usu.nombre}}</b></i> 
+    </form>
+</nav>
+<div *ngIf="altaLocal == true">
+    <app-carga-locales></app-carga-locales>
+</div>
+<div *ngIf="altaProd == true">
+    <app-carga-productos></app-carga-productos>
+</div>
+
+<div *ngIf="tablaProd == true">
+    <app-table-productos></app-table-productos>
+</div> 
+</div>

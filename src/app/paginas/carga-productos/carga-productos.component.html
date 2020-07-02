@@ -1,0 +1,42 @@
+<div class="login-page">
+    <div class="form">
+        <!-- <img src="../../../assets/img/singup.png" class="image"> -->
+        <form class="login-form">
+            <p style="font-size: xx-large;"><b>ALTA PRODUCTO</b></p>
+            <p style="text-align: justify;">INGRESE NOMBRE</p>
+            <input type="text" placeholder="nombre" [(ngModel)]="produc.nombre" name="produc.nombre" />
+            <p style="text-align: justify;">INGRESE MARCA</p>
+            <input type="text" placeholder="marca" [(ngModel)]="produc.marca" name="produc.marca" />
+            <p style="text-align: justify;">INGRESE STOCK</p>
+            <input type="number" placeholder="stock" [(ngModel)]="produc.stock" name="produc.stock" />
+            <p style="text-align: justify;">SELECCIONE TIPO</p>
+            <select class="custom-select" [(ngModel)] = "produc.tipo" style="width: 100%;" name="produc.tipo">
+                <option value = "calzado">Calzado</option>
+                <option value = "abrigos">Abrigos</option>
+                <option value = "ropa">Ropa</option>
+                <option value = "jean">Jean</option>
+            </select>
+            <br>
+            <br>
+            <p style="text-align: justify;">INGRESE NOMBRE DEL LOCAL</p>
+            <input type="text" placeholder="local" [(ngModel)]="produc.localNombre" name="aut.tipo" />
+            <p style="text-align: justify;">INGRESE PRECIO</p>
+            <input type="number" placeholder="precio" [(ngModel)]="produc.precio" name="produc.precio" />
+            <br>
+            <br>
+            <p>{{message}}</p>
+            <div *ngIf="spinner">
+                <div class="col-md-2 loader5 bg-green-grd">
+                    <div class="trinity-rings-spinner">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <re-captcha (resolved)="resolved($event)" siteKey="6LdcXAAVAAAAAHxGowz5uvLwIFdjXXyUBfkoxTuy"></re-captcha>
+            <br>
+            <button type="button"  (click)="subirProd()">Alta Producto</button>
+        </form>
+    </div>
+</div>

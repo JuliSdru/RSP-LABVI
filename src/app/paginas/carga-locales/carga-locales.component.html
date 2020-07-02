@@ -1,0 +1,31 @@
+<div class="login-page">
+    <div class="form">
+        <!-- <img src="../../../assets/img/singup.png" class="image"> -->
+        <form class="login-form">
+            <p style="font-size: xx-large;"><b>ALTA LOCAL</b></p>
+            <p style="text-align: justify;">INGRESE NOMBRE DEL LOCAL</p>
+            <input type="text" placeholder="nombre" [(ngModel)]="locals.nombre" name="locals.nombre" />
+            <p style="text-align: justify;">INGRESE MAIL</p>
+            <input type="email" placeholder="email" [(ngModel)]="locals.email" name="locals.email" />
+            <p style="text-align: justify;">INGRESE TELEFONO</p>
+            <input type="number" placeholder="telefono" [(ngModel)]="locals.telefono" name="locals.telefono" />
+            <p style="text-align: justify;">INGRESE LOCALIDAD</p>
+            <input type="text" placeholder="localidad" [(ngModel)]="locals.localidad" name="locals.localidad" />
+            <br>
+            <br>
+            <p>{{message}}</p>
+            <div *ngIf="spinner">
+                <div class="col-md-2 loader5 bg-green-grd">
+                    <div class="trinity-rings-spinner">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <re-captcha (resolved)="resolved($event)" siteKey="6LdcXAAVAAAAAHxGowz5uvLwIFdjXXyUBfkoxTuy"></re-captcha>
+            <br>
+            <button type="button"  (click)="subirLocal()">Alta Local</button>
+        </form>
+    </div>
+</div>

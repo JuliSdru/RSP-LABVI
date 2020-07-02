@@ -1,0 +1,168 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+html { background: url("https://document-export.canva.com/DAD9Uj1u_YQ/356/thumbnail/0001-8145440057.png"); }
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  padding: 2% 0 5%;
+  background: url("https://document-export.canva.com/DAD9Uj1u_YQ/356/thumbnail/0001-8145440057.png");
+  /* background: radial-gradient(circle, rgb(118, 87, 138) 0%, rgb(73, 26, 107) 40%, rgba(0,0,0,1) 100%); */
+  /*background: url("https://image.freepik.com/vector-gratis/coleccion-tiendas-comercios_53876-81045.jpg");*/
+}
+
+.image{
+    height: 150px;
+    border-radius: 20px;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.945);
+  max-width: 400px;
+  height: 900px;
+  margin: 0 auto 100px;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  
+ 
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: rgb(76, 175, 125);
+  color: black;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: rgb(76, 175, 125);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: black;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form .cuentas{
+  width: 30%;
+}
+
+.form button:hover,.form button:active,.form button:focus {
+  background: #cf5f57;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: rgb(104, 160, 117);
+  text-decoration: underline;
+}
+
+re-captcha
+{
+  position: relative;
+ left: 35px;
+
+}
+/* body {
+  background: #000000; 
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+} */
+
+p{
+  color: rgb(76, 175, 125);
+}
+
+/****************SPINNER***************/
+.trinity-rings-spinner, .trinity-rings-spinner * {
+  box-sizing: border-box;
+}
+
+.trinity-rings-spinner {
+  height: 115px;
+  width: 115px;
+  margin-left: 380%;
+  margin-top: -48px;
+  margin-bottom: -18px;
+  align-items: center;
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.trinity-rings-spinner .circle {
+  position: absolute;;
+  display:block;
+  border: 3px solid rgb(76, 175, 125);
+  opacity: 1;
+}
+
+.trinity-rings-spinner .circle:nth-child(1) {
+  height: 5px;
+  width: 5px;
+  left: 180px;
+  animation : trinity-rings-spinner-circle1-animation 0.25s infinite;
+  border-width: 3px;
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.trinity-rings-spinner .circle:nth-child(2) {
+  height: 5px;
+  width: 5px;
+  left: 190px;
+  animation : trinity-rings-spinner-circle2-animation 0.50s infinite;
+  border-width: 3px;
+  -webkit-animation-duration: 0.50s;
+  animation-duration: 0.50s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.trinity-rings-spinner .circle:nth-child(3) {
+  height: 5px;
+  width: 5px;
+  left: 200px;
+  animation : trinity-rings-spinner-circle3-animation 0.75s infinite;
+  border-width: 3px;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes trinity-rings-spinner-circle1-animation{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes trinity-rings-spinner-circle2-animation{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes trinity-rings-spinner-circle3-animation{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
